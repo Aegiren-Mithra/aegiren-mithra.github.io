@@ -12,7 +12,7 @@
      logiciel de messagerie du visiteur. Le repli sert aussi de filet si
      l'endpoint est injoignable — aucune demande n'est jamais perdue. */
 
-var FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbw2f2UwdKdl_2OCCeBB_Q5PGZbhmKcNjCVIkKrJl9Q2Gu28BqXsZHx9W5keS6IwxAD76w/exec";
+var FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycby_hkzG2A-aK9eExjO2Begee-I1Ovmp91PxPugHGQVUd1DWMXSKiOGGC2bx4l4_CuVhlQ/exec";
 var CONTACT_EMAIL = "contact@aegiren.com";
 var CHARGEMENT = Date.now();
 
