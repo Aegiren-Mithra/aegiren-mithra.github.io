@@ -1,0 +1,18 @@
+FONTES AUTO-HEBERGEES — INSTALLEES le 27/07/2026 (regle de marque : jamais
+d'appel a Google Fonts en production, coherence RGPD).
+
+Presentes dans ce dossier (verifie : servies en 200 par le site) :
+
+  SourceSans3-Regular.woff2     400   ] Source Sans 3 v3.052R
+  SourceSans3-Medium.woff2      500   ] depot officiel Adobe
+  SourceSans3-SemiBold.woff2    600   ] github.com/adobe-fonts/source-sans
+  JetBrainsMono-Regular.woff2   400   ] JetBrains Mono v2.304
+  JetBrainsMono-Medium.woff2    500   ] depot officiel JetBrains
+  JetBrainsMono-Bold.woff2      700   ] github.com/JetBrains/JetBrainsMono
+
+Licences (SIL Open Font License 1.1, redistribution libre) :
+  LICENCE-SourceSans3-OFL.txt · LICENCE-JetBrainsMono-OFL.txt
+Ces deux fichiers accompagnent les fontes : les laisser dans le dossier.
+
+En cas de reinstallation : reprendre les memes depots officiels et respecter
+EXACTEMENT les noms de fichiers ci-dessus (le CSS les attend tels quels).

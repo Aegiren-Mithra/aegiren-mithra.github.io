@@ -1,0 +1,6 @@
+# Document interne (guide de mise en ligne) — ne pas publier sur le site
+DEPLOIEMENT.md
+
+# Caches Python du générateur
+__pycache__/
+*.pyc

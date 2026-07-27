@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Checklist sécurité Microsoft 365 : 15 contrôles (PDF gratuit)</title>
+<meta name="description" content="Quinze contrôles qu'un dirigeant de PME peut vérifier lui-même dans Microsoft 365 : MFA, comptes dormants, partages externes, sauvegarde. Téléchargement libre, sans e-mail.">
+<link rel="canonical" href="https://aegiren.com/fr/checklist/">
+<link rel="alternate" hreflang="fr" href="https://aegiren.com/fr/checklist/">
+<link rel="alternate" hreflang="en" href="https://aegiren.com/en/checklist/">
+<link rel="alternate" hreflang="x-default" href="https://aegiren.com/fr/checklist/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="icon" type="image/svg+xml" href="/assets/img/aegiren-favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/aegiren-favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/aegiren-favicon-180.png">
+<link rel="preload" href="/assets/fonts/SourceSans3-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aegiren">
+<meta property="og:title" content="Checklist sécurité Microsoft 365 : 15 contrôles (PDF gratuit)">
+<meta property="og:description" content="Quinze contrôles qu'un dirigeant de PME peut vérifier lui-même dans Microsoft 365 : MFA, comptes dormants, partages externes, sauvegarde. Téléchargement libre, sans e-mail.">
+<meta property="og:url" content="https://aegiren.com/fr/checklist/">
+<meta property="og:image" content="https://aegiren.com/assets/img/aegiren-og.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://aegiren.com/#organisation","name":"Aegiren","url":"https://aegiren.com/fr/","logo":"https://aegiren.com/assets/img/aegiren-monogramme.svg","image":"https://aegiren.com/assets/img/aegiren-og.png","email":"contact@aegiren.com","slogan":"Audité · Durci · Documenté","description":"Conseil et audit de sécurité des accès et de l'identité Microsoft 365 / Entra ID pour les TPE et PME de 5 à 80 postes. À distance, à prix fixe, livré par écrit.","areaServed":[{"@type":"Country","name":"France"},{"@type":"Place","name":"Europe"}],"availableLanguage":["fr","en"],"knowsAbout":["Microsoft 365","Microsoft Entra ID","Conditional access","Multi-factor authentication","Identity and access management","CIS Microsoft 365 Foundations Benchmark","ANSSI","NIS2","Microsoft 365 backup"],"contactPoint":{"@type":"ContactPoint","contactType":"commercial","email":"contact@aegiren.com","availableLanguage":["fr","en"],"url":"https://aegiren.com/fr/contact/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://aegiren.com/fr/"},{"@type":"ListItem","position":2,"name":"Ressources","item":"https://aegiren.com/fr/ressources/"},{"@type":"ListItem","position":3,"name":"Checklist","item":"https://aegiren.com/fr/checklist/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sécuriser Microsoft 365 dans une PME : 15 contrôles à vérifier vous-même","description":"Quinze contrôles qu'un dirigeant de PME peut vérifier lui-même dans Microsoft 365 : MFA, comptes dormants, partages externes, sauvegarde. Téléchargement libre, sans e-mail.","url":"https://aegiren.com/fr/checklist/","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegiren.com/fr/checklist/"},"inLanguage":"fr","datePublished":"2026-07-26","dateModified":"2026-07-27","author":{"@type":"Person","name":"Mithra","url":"https://aegiren.com/fr/#apropos"},"publisher":{"@id":"https://aegiren.com/#organisation"},"image":"https://aegiren.com/assets/img/aegiren-og.png","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by-nd/4.0/","creditText":"Aegiren — aegiren.com"}</script>
+</head>
+<body>
+<header class="entete">
+<div class="conteneur entete__barre">
+<a class="entete__logo" href="/fr/" aria-label="Aegiren — accueil"><img src="/assets/img/aegiren-lockup-h-light.svg" alt="Aegiren" width="150" height="34" fetchpriority="high"></a>
+<nav class="nav" aria-label="Navigation principale">
+<a href="/fr/">Accueil</a>
+<a href="/fr/methode/">Méthode</a>
+<a href="/fr/offres/">Offres</a>
+<a href="/fr/ressources/" aria-current="page" data-secondaire>Ressources</a>
+<a href="/fr/#apropos" data-secondaire>À propos</a>
+</nav>
+<div class="entete__actions">
+<span class="langue"><strong>FR</strong><span>&nbsp;—&nbsp;</span><a href="/en/checklist/" data-alt-lang hreflang="en">EN</a></span>
+<a class="btn btn--primaire btn--petit" href="/fr/contact/">Demander un échange</a>
+</div>
+</div>
+</header>
+<main>
+<div class="article">
+<div class="article__tete">
+<span class="kicker">Ressource gratuite — diffusion libre</span>
+<h1>Sécuriser Microsoft 365 dans une PME : 15 contrôles à vérifier vous-même</h1>
+<p class="chapeau">Quinze questions qu'un dirigeant peut vérifier lui-même, chacune avec le chemin exact dans le portail Microsoft, ce qui distingue un vert d'un rouge, et pourquoi ça compte.</p>
+<div class="article__actions">
+<a class="btn btn--primaire" href="/fr/test/">Répondre en ligne et obtenir mon score</a>
+<a class="btn btn--contour" href="/assets/docs/H-Checklist-15-controles-M365-FR.pdf" download>Télécharger le PDF</a>
+<span class="formulaire__note">SANS E-MAIL, SANS FORMULAIRE</span>
+</div>
+</div>
+<div class="article__corps">
+<p><strong>Une checklist gratuite, sans inscription et sans e-mail à laisser.</strong>
+Aegiren — sécurité des accès et de l'identité · Microsoft 365 · Entra ID
+<strong>Version 1.1 — 27 juillet 2026</strong> · Licence CC BY-ND 4.0 · Réutilisation et citation en fin de document</p>
+<hr />
+<h2 id="a-qui-elle-sadresse">À qui elle s'adresse</h2>
+<p>Vous dirigez une structure de 5 à 80 personnes sous Microsoft 365. Vous n'avez pas d'informaticien à demeure, ou une seule personne qui fait déjà tout. Vous vous demandez si vos comptes sont correctement protégés, sans savoir par quel bout regarder.</p>
+<p>Cette checklist répond à cette question. Quinze points, chacun avec <strong>l'endroit exact où aller voir</strong> dans vos portails d'administration, ce qui distingue une situation saine d'une situation à corriger, et pourquoi cela compte.</p>
+<p><strong>Ce dont vous avez besoin :</strong> un compte administrateur, ou un compte disposant du rôle <em>Lecteur général</em> (<code>Global Reader</code>), qui permet de tout consulter sans rien modifier. <strong>Comptez une heure.</strong> Vous ne modifierez rien en suivant ce document : il ne fait que regarder.</p>
+<p><strong>Ce que cette checklist n'est pas :</strong> un audit. Elle couvre l'essentiel de ce qui provoque des incidents dans les petites structures, pas la totalité des réglages de Microsoft 365. Elle ne remplace ni un regard indépendant, ni un plan d'action priorisé.</p>
+<h2 id="pourquoi-les-acces-et-pas-autre-chose">Pourquoi les accès, et pas autre chose</h2>
+<p>La grande majorité des compromissions de petites entreprises ne commencent pas par une faille technique exotique. Elles commencent par <strong>un compte</strong> : un mot de passe réutilisé, un message d'hameçonnage crédible, un compte d'ancien salarié jamais désactivé, un administrateur sans double authentification. L'attaquant n'entre pas par effraction, il se connecte.</p>
+<p>C'est une bonne nouvelle : l'essentiel des mesures ci-dessous sont <strong>gratuites</strong>, incluses dans votre abonnement, et se règlent en quelques heures.</p>
+<h2 id="comment-noter">Comment noter</h2>
+<p>Pour chaque point, attribuez-vous une couleur.</p>
+<ul>
+<li>🟢 <strong>Vert</strong> — la situation décrite comme saine est vérifiée.</li>
+<li>🟠 <strong>Orange</strong> — c'est partiellement en place, ou vous n'êtes pas certain.</li>
+<li>🔴 <strong>Rouge</strong> — la situation décrite comme à risque correspond à la vôtre.</li>
+</ul>
+<p>Un rouge n'est pas une catastrophe, c'est une tâche. Ce qui compte, c'est de savoir lesquels vous avez.</p>
+<blockquote>
+<p><strong>Note sur les portails.</strong> Microsoft renomme régulièrement ses écrans. Les chemins ci-dessous sont ceux en vigueur ; si un libellé a changé, la fonction se retrouve en recherchant son nom dans la barre du portail concerné.</p>
+<p><code>entra.microsoft.com</code> — centre d'administration Microsoft Entra (identités, accès)
+<code>admin.microsoft.com</code> — centre d'administration Microsoft 365 (utilisateurs, licences)
+<code>security.microsoft.com</code> — portail Microsoft Defender (sécurité, messagerie)
+<code>purview.microsoft.com</code> — portail Microsoft Purview (audit, conformité)</p>
+</blockquote>
+<hr />
+<h2 id="1-le-secure-score">1. Le Secure Score</h2>
+<p><strong>La question :</strong> Microsoft calcule en permanence une note de sécurité pour votre environnement. Quelle est la vôtre, et l'avez-vous déjà regardée ?</p>
+<p><strong>Où vérifier :</strong> portail Defender → <em>Gestion de l'exposition</em> → <em>Degré de sécurisation</em> (Secure Score).</p>
+<p><strong>Pourquoi ça compte :</strong> c'est le seul chiffre que Microsoft vous donne gratuitement sur votre propre posture, assorti de recommandations classées par gain. Un score bas signale que les réglages par défaut n'ont jamais été resserrés — or les réglages par défaut privilégient la facilité d'usage, pas la sécurité.</p>
+<p>🟢 Vous connaissez votre score, vous le suivez, et les recommandations à fort gain ont été traitées.
+🔴 Vous découvrez l'écran, ou le score est inférieur à 50 %.</p>
+<hr />
+<h2 id="2-les-comptes-dormants">2. Les comptes dormants</h2>
+<p><strong>La question :</strong> combien de comptes actifs n'ont pas servi depuis plus de quatre-vingt-dix jours ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Identité</em> → <em>Utilisateurs</em> → <em>Tous les utilisateurs</em>, en affichant la colonne de dernière connexion. L'historique complet des connexions nécessite une licence Entra ID P1 ; à défaut, recoupez avec votre liste de personnes réellement présentes.</p>
+<p><strong>Pourquoi ça compte :</strong> un compte inutilisé reste une porte ouverte, et c'est souvent celle qui a le mot de passe le plus ancien et le moins de protections. Le compte d'un salarié parti il y a deux ans n'alertera personne s'il est utilisé un dimanche soir. Vous payez également une licence pour chacun.</p>
+<p>🟢 Aucun compte actif sans connexion depuis quatre-vingt-dix jours, et vous faites une revue trimestrielle.
+🔴 Vous trouvez des comptes de personnes qui ont quitté l'entreprise, encore actifs.</p>
+<hr />
+<h2 id="3-les-administrateurs">3. Les administrateurs</h2>
+<p><strong>La question :</strong> combien de personnes sont <em>Administrateur général</em> de votre environnement ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Identité</em> → <em>Rôles et administrateurs</em> → <em>Administrateur général</em>.</p>
+<p><strong>Pourquoi ça compte :</strong> l'administrateur général peut tout faire — lire n'importe quelle boîte, réinitialiser n'importe quel mot de passe, supprimer n'importe quelle donnée. Chaque compte de ce type est une clé du royaume. Il est fréquent d'en découvrir six ou huit dans une PME de quarante personnes, souvent parce que le prestataire précédent n'a jamais été retiré.</p>
+<p>🟢 Deux administrateurs généraux au maximum, dont un compte de secours peu utilisé, et les administrateurs disposent d'un compte dédié séparé de leur compte de messagerie quotidien.
+🔴 Plus de trois administrateurs généraux, ou des comptes d'administration servant aussi à lire les e-mails et naviguer sur internet.</p>
+<hr />
+<h2 id="4-la-double-authentification">4. La double authentification</h2>
+<p><strong>La question :</strong> la double authentification est-elle imposée à <strong>tout le monde</strong>, et par quel mécanisme ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Protection</em> → <em>Méthodes d'authentification</em>, puis l'onglet d'activité d'inscription. Vérifiez aussi si les <em>Paramètres de sécurité par défaut</em> sont activés (Entra → <em>Identité</em> → <em>Vue d'ensemble</em> → <em>Propriétés</em>).</p>
+<p><strong>Pourquoi ça compte :</strong> c'est la mesure au meilleur rapport effort/protection qui existe. Sans second facteur, un seul mot de passe volé suffit à prendre le contrôle d'une boîte — celle du dirigeant, celle de la comptabilité. Attention au piège fréquent : la double authentification activée « pour les administrateurs seulement », ou proposée sans être obligatoire.</p>
+<p>Toutes les méthodes ne se valent pas : l'application d'authentification vaut mieux que le SMS, qui reste vulnérable au détournement de ligne.</p>
+<p>🟢 Cent pour cent des comptes, administrateurs en premier, avec l'application d'authentification comme méthode principale.
+🔴 Des comptes sans double authentification, ou une activation laissée au choix de chacun.</p>
+<hr />
+<h2 id="5-les-regles-dacces-conditionnel">5. Les règles d'accès conditionnel</h2>
+<p><strong>La question :</strong> existe-t-il des règles qui décident d'autoriser ou de bloquer une connexion selon son contexte ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Protection</em> → <em>Accès conditionnel</em> → <em>Stratégies</em>. Nécessite une licence Entra ID P1, incluse dans Business Premium.</p>
+<p><strong>Pourquoi ça compte :</strong> sans ces règles, toutes les connexions sont traitées de la même façon — celle de votre comptable depuis le bureau comme celle d'un inconnu depuis l'autre bout du monde à trois heures du matin. Un socle de base tient en quatre règles : double authentification pour tous, blocage des anciens protocoles, protection renforcée des administrateurs, et réaction aux connexions jugées risquées.</p>
+<p>🟢 Un socle de règles est en place, testé, et un compte de secours en est exclu pour éviter de se verrouiller dehors.
+🔴 Aucune règle, ou uniquement les <em>Paramètres de sécurité par défaut</em> alors que vous disposez d'une licence permettant mieux.</p>
+<hr />
+<h2 id="6-lauthentification-heritee">6. L'authentification héritée</h2>
+<p><strong>La question :</strong> les anciens protocoles de messagerie sont-ils encore autorisés à se connecter ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Surveillance</em> → <em>Journaux de connexion</em>, en filtrant sur l'application cliente pour ne garder que les clients d'authentification héritée. Regardez les trente derniers jours.</p>
+<p><strong>Pourquoi ça compte :</strong> ces vieux protocoles — POP, IMAP, SMTP en authentification simple — <strong>ne savent pas gérer la double authentification</strong>. Tant qu'ils sont ouverts, ils constituent un contournement de toutes vos protections, et ce sont eux que visent en priorité les attaques automatisées par essai de mots de passe.</p>
+<p>🟢 Aucune connexion héritée sur trente jours, et un blocage explicite en place.
+🔴 Des connexions héritées apparaissent, ou vous n'avez jamais vérifié.</p>
+<hr />
+<h2 id="7-les-transferts-de-messagerie-et-lanti-hameconnage">7. Les transferts de messagerie et l'anti-hameçonnage</h2>
+<p><strong>La question :</strong> un utilisateur peut-il faire suivre automatiquement tous ses e-mails vers une adresse extérieure ? Et vos protections anti-hameçonnage sont-elles réglées ?</p>
+<p><strong>Où vérifier :</strong> portail Defender → <em>Stratégies et règles</em> → <em>Stratégies contre les menaces</em> → <em>Anti-courrier indésirable sortant</em> pour le transfert automatique, et <em>Anti-hameçonnage</em> pour la protection. Vérifiez aussi les règles de boîte aux lettres dans le centre d'administration Exchange.</p>
+<p><strong>Pourquoi ça compte :</strong> la règle de transfert discrète est <strong>la signature classique d'une boîte compromise</strong>. L'attaquant qui prend la main sur une messagerie crée une règle qui lui expédie une copie de tout, puis se retire : il continue de tout lire sans jamais se reconnecter. C'est le mécanisme central de la fraude au virement.</p>
+<p>🟢 Le transfert automatique vers l'extérieur est bloqué, et la protection anti-hameçonnage est renforcée pour les dirigeants et la comptabilité.
+🔴 Le transfert externe est autorisé sans contrôle, ou vous découvrez des règles de transfert que personne n'a créées sciemment.</p>
+<hr />
+<h2 id="8-le-partage-externe-des-fichiers">8. Le partage externe des fichiers</h2>
+<p><strong>La question :</strong> qui peut recevoir un lien vers vos documents, et ces liens expirent-ils ?</p>
+<p><strong>Où vérifier :</strong> centre d'administration SharePoint → <em>Stratégies</em> → <em>Partage</em>.</p>
+<p><strong>Pourquoi ça compte :</strong> le réglage le plus permissif produit des liens accessibles <strong>à toute personne qui les possède, sans aucune authentification</strong>. Un lien de ce type transféré, retrouvé dans une boîte compromise ou simplement oublié dans un vieil e-mail reste valable indéfiniment. Beaucoup d'organisations découvrent des centaines de liens anonymes actifs dont plus personne ne connaît l'existence.</p>
+<p>🟢 Le partage est limité aux personnes authentifiées, les liens ont une date d'expiration, et les partages sensibles ont été revus.
+🔴 Le partage « tout le monde » est autorisé, sans expiration.</p>
+<hr />
+<h2 id="9-le-depart-dun-collaborateur">9. Le départ d'un collaborateur</h2>
+<p><strong>La question :</strong> quand quelqu'un quitte l'entreprise, que se passe-t-il exactement, et qui le fait ?</p>
+<p><strong>Où vérifier :</strong> nulle part — c'est le seul point de cette liste qui ne se lit pas sur un écran. Prenez la dernière personne partie et vérifiez son compte.</p>
+<p><strong>Pourquoi ça compte :</strong> entre le dernier jour et la désactivation effective, il s'écoule souvent des semaines. Or désactiver un compte ne suffit pas : tant que les <strong>sessions ouvertes</strong> ne sont pas révoquées, l'accès depuis un téléphone personnel déjà connecté peut se poursuivre. Une procédure écrite couvre le blocage de la connexion, la révocation des sessions, la réinitialisation du mot de passe, le devenir de la boîte et le transfert des documents.</p>
+<p>🟢 Une procédure écrite existe, elle est appliquée le jour du départ, et le compte de la dernière personne partie est correctement traité.
+🔴 Rien d'écrit, ou vous trouvez des comptes d'anciens collaborateurs encore actifs.</p>
+<hr />
+<h2 id="10-le-journal-daudit">10. Le journal d'audit</h2>
+<p><strong>La question :</strong> le journal d'audit unifié est-il activé, et depuis combien de temps conservez-vous les traces ?</p>
+<p><strong>Où vérifier :</strong> portail Purview → <em>Audit</em>. Si l'écran propose de démarrer l'enregistrement, c'est qu'il est éteint.</p>
+<p><strong>Pourquoi ça compte :</strong> c'est votre boîte noire. Sans elle, en cas d'incident, il est <strong>impossible</strong> de savoir quels fichiers ont été consultés, quels e-mails ont été lus, ni depuis quand. Vous ne pouvez ni mesurer les dégâts, ni répondre à votre assureur, ni notifier correctement une violation de données. L'activation prend quelques minutes, elle est gratuite, et elle n'a aucun impact sur les utilisateurs — mais elle n'est pas rétroactive : ce qui n'a pas été enregistré est perdu.</p>
+<p>🟢 Le journal est actif, et vous connaissez la durée de conservation associée à vos licences.
+🔴 Le journal est désactivé, ou vous l'ignorez.</p>
+<hr />
+<h2 id="11-les-mots-de-passe-et-leur-reinitialisation">11. Les mots de passe et leur réinitialisation</h2>
+<p><strong>La question :</strong> un utilisateur peut-il réinitialiser son mot de passe seul et de façon sécurisée ? Et imposez-vous encore un changement périodique ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Protection</em> → <em>Réinitialisation du mot de passe</em>, et <em>Méthodes d'authentification</em> → <em>Protection par mot de passe</em> pour la liste des termes interdits.</p>
+<p><strong>Pourquoi ça compte :</strong> deux idées ont changé. D'abord, la réinitialisation en libre-service, bien configurée avec double vérification, est <strong>plus sûre</strong> qu'un appel au support où l'on reconnaît la voix du demandeur — c'est ce coup de téléphone que l'ingénierie sociale exploite. Ensuite, l'expiration forcée tous les trois mois est aujourd'hui <strong>déconseillée</strong> par Microsoft comme par l'ANSSI : elle pousse mécaniquement vers <code>Printemps2026!</code> puis <code>Ete2026!</code>. Un mot de passe long, unique, jamais expiré, associé à une double authentification, protège nettement mieux.</p>
+<p>🟢 La réinitialisation en libre-service est active avec deux méthodes de vérification, les mots de passe n'expirent plus, et les termes évidents liés à votre entreprise sont interdits.
+🔴 Pas de libre-service, ou une expiration forcée toujours en vigueur.</p>
+<hr />
+<h2 id="12-la-sauvegarde-de-vos-donnees">12. La sauvegarde de vos données</h2>
+<p><strong>La question :</strong> si tous vos e-mails et fichiers étaient supprimés ou chiffrés aujourd'hui, comment les récupéreriez-vous dans six mois ?</p>
+<p><strong>Où vérifier :</strong> cherchez si une solution de sauvegarde tierce est en place. Ce n'est pas une fonction native de Microsoft 365 : si personne ne peut nommer l'outil, il n'y en a pas.</p>
+<p><strong>Pourquoi ça compte :</strong> c'est le malentendu le plus coûteux du cloud. Microsoft garantit la <strong>disponibilité de sa plateforme</strong>, pas la <strong>récupération de vos contenus</strong> face à vos propres incidents — c'est le modèle de responsabilité partagée, écrit dans vos conditions de service. Ce que vous avez n'est pas une sauvegarde mais une <strong>corbeille à rétention limitée</strong>, de l'ordre de trente à quatre-vingt-treize jours selon les éléments. Elle récupère un fichier effacé la semaine dernière ; elle ne restaure rien trois mois après un sinistre. Et un rançongiciel moderne chiffre précisément les fichiers <strong>synchronisés</strong> vers OneDrive et SharePoint.</p>
+<p>🟢 Une sauvegarde tierce couvre la messagerie, OneDrive, SharePoint et Teams, avec une durée de conservation définie — et <strong>une restauration a déjà été testée</strong>.
+🔴 Aucune sauvegarde tierce, ou une sauvegarde dont personne n'a jamais vérifié qu'elle se restaure.</p>
+<hr />
+<h2 id="13-les-appareils">13. Les appareils</h2>
+<p><strong>La question :</strong> vos données professionnelles sont-elles accessibles depuis des appareils personnels non gérés ?</p>
+<p><strong>Où vérifier :</strong> centre d'administration Intune → <em>Appareils</em> → <em>Conformité</em>. À défaut de licence Intune, la question reste valable : sur quels téléphones et ordinateurs vos e-mails sont-ils réellement consultés ?</p>
+<p><strong>Pourquoi ça compte :</strong> un ordinateur familial non chiffré, sans mise à jour et partagé avec des adolescents peut aujourd'hui télécharger l'intégralité d'un espace documentaire. En cas de perte ou de vol, sans chiffrement du disque ni verrouillage, les données sont lisibles directement.</p>
+<p>🟢 Des règles de conformité minimales — chiffrement, verrouillage, système à jour — conditionnent l'accès aux données.
+🔴 N'importe quel appareil peut se connecter et synchroniser sans condition.</p>
+<hr />
+<h2 id="14-les-invites-externes">14. Les invités externes</h2>
+<p><strong>La question :</strong> combien de personnes extérieures ont un accès à votre environnement, et depuis quand ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Identité</em> → <em>Utilisateurs</em>, en filtrant sur le type d'utilisateur <em>Invité</em>.</p>
+<p><strong>Pourquoi ça compte :</strong> chaque prestataire, expert-comptable, stagiaire ou partenaire invité sur un espace Teams y reste. La mission se termine, l'invitation demeure. Il n'est pas rare de trouver dans une PME de cinquante personnes plusieurs dizaines d'invités, dont beaucoup travaillent désormais ailleurs — et l'accès d'un invité échappe entièrement à votre contrôle de sécurité, puisqu'il dépend de la protection de son propre compte.</p>
+<p>🟢 La liste des invités est connue, justifiée, et revue au moins deux fois par an.
+🔴 Vous découvrez le nombre, ou des invités de missions terminées depuis longtemps.</p>
+<hr />
+<h2 id="15-les-connexions-a-risque">15. Les connexions à risque</h2>
+<p><strong>La question :</strong> que se passe-t-il quand Microsoft détecte une connexion suspecte — depuis un pays inhabituel, une adresse anonymisée, ou avec un mot de passe apparu dans une fuite publique ?</p>
+<p><strong>Où vérifier :</strong> centre Entra → <em>Protection</em> → <em>Identity Protection</em> → <em>Utilisateurs à risque</em> et <em>Connexions à risque</em>. Les règles automatiques nécessitent une licence Entra ID P2 ; la consultation des détections reste possible sans.</p>
+<p><strong>Pourquoi ça compte :</strong> Microsoft détecte ces signaux pour vous. Sans règle associée, la détection s'affiche sur un écran que personne n'ouvre, et il ne se passe rien. Avec une règle, une connexion risquée déclenche automatiquement une demande de double authentification ou un changement de mot de passe — c'est-à-dire une réaction en pleine nuit, sans intervention humaine.</p>
+<p>🟢 Les détections sont exploitées, et des règles automatiques réagissent aux risques élevés.
+🔴 Personne n'a jamais ouvert cet écran.</p>
+<hr />
+<h2 id="et-maintenant">Et maintenant ?</h2>
+<p>Comptez vos couleurs.</p>
+<p><strong>Cinq rouges ou plus.</strong> C'est fréquent et ce n'est pas une raison de paniquer : cela signifie surtout que vos réglages sont restés ceux d'origine. Commencez par les points 4, 3, 6 et 12 — la double authentification, le nombre d'administrateurs, les anciens protocoles et la sauvegarde. Ces quatre-là ferment l'essentiel du risque réel, et les trois premiers sont gratuits.</p>
+<p><strong>Entre un et quatre rouges.</strong> Votre socle tient. Traitez-les dans l'ordre où ils apparaissent ci-dessus : la liste est classée par impact décroissant.</p>
+<p><strong>Aucun rouge, quelques oranges.</strong> Vous êtes au-dessus de la moyenne de votre catégorie. Le sujet devient alors la régularité — une revue trimestrielle des comptes, des invités et des partages — plutôt que la configuration.</p>
+<p><strong>Une remarque honnête pour finir.</strong> Cette liste vous dit <em>où</em> vous en êtes. Elle ne vous dit pas ce qui, dans votre situation particulière, mérite d'être traité en premier, ni ce que coûte réellement chaque correction. C'est précisément ce travail — regarder, comparer à un référentiel, noter, prioriser — que je fais pour des structures de votre taille, en quelques heures étalées sur deux semaines, à distance, et restitué par écrit.</p>
+<p>Si vous voulez en parler, ou simplement poser une question sur un point de cette liste : <strong>contact@aegiren.com</strong>. Répondre à une question ne vous engage à rien.</p>
+<hr />
+<p><strong>Référentiels.</strong> Cette checklist s'appuie sur le <em>CIS Microsoft 365 Foundations Benchmark</em> et sur le <em>Guide d'hygiène informatique</em> de l'ANSSI, adaptés à la réalité d'une structure de 5 à 80 postes.</p>
+<h2 id="version-et-reutilisation">Version et réutilisation</h2>
+<p><strong>Version 1.1 — révisée le 27 juillet 2026.</strong> La version en vigueur est toujours celle publiée sur <strong>aegiren.com/fr/checklist</strong>. Les chemins d'accès aux portails Microsoft sont vérifiés à cette date ; Microsoft renomme régulièrement ses écrans, et une fonction déplacée se retrouve en cherchant son nom dans la barre du portail concerné.</p>
+<p><strong>Licence : Creative Commons Attribution — Pas de Modification 4.0 International (CC BY-ND 4.0).</strong> Vous pouvez copier, redistribuer et diffuser ce document sur tout support et par tout moyen, <strong>y compris à des fins commerciales</strong> : un expert-comptable, un courtier en assurance ou un infogéreur peut le remettre à ses propres clients, l'héberger sur son site ou le joindre à un dossier. Deux conditions seulement : <strong>en citer la source avec un lien</strong>, et <strong>ne pas le modifier</strong>. Texte complet : <code>creativecommons.org/licenses/by-nd/4.0/deed.fr</code>.</p>
+<h3 id="comment-citer-cette-ressource">Comment citer cette ressource</h3>
+<p>En note ou en bibliographie :</p>
+<blockquote>
+<p>Aegiren, <em>Sécuriser Microsoft 365 dans une PME : 15 contrôles à vérifier vous-même</em>, version 1.1, 27 juillet 2026. https://aegiren.com/fr/checklist/</p>
+</blockquote>
+<p>Sur une page web :</p>
+<blockquote>
+<p><code>&lt;a href="https://aegiren.com/fr/checklist/"&gt;Sécuriser Microsoft 365 dans une PME : 15 contrôles&lt;/a&gt; — Aegiren, v1.1 (2026)</code></p>
+</blockquote>
+<p><strong>Vous l'avez publiée quelque part ?</strong> Écrivez à <strong>contact@aegiren.com</strong>. Les reprises sont recensées, et prévenues personnellement à chaque nouvelle version — pour qu'aucun de vos clients ne se retrouve avec un chemin de portail périmé entre les mains.</p>
+<hr />
+<p><em>Aegiren — Votre Microsoft 365, audité, durci, documenté.</em>
+<em>Rédigé par Mithra · v1.1 · 27 juillet 2026 · aegiren.com</em></p>
+</div>
+</div>
+</main>
+<footer class="pied pied--simple">
+<div class="conteneur pied__ligne">
+<img src="/assets/img/aegiren-lockup-etendu-dark.svg" alt="Aegiren — Audité · Durci · Documenté" width="190" height="69">
+<div class="pied__liens">
+<a href="/fr/">Accueil</a>
+<a href="/fr/ressources/">Ressources</a>
+<a href="/fr/offres/">Offres</a>
+<a href="/fr/contact/">Contact</a>
+<a class="mono" href="mailto:contact@aegiren.com">contact@aegiren.com</a>
+</div>
+<span class="pied__copyright">©&nbsp;2026 AEGIREN&nbsp;&nbsp;·&nbsp;&nbsp;<a href="/fr/confidentialite/">CONFIDENTIALITÉ</a></span>
+</div>
+</footer>
+</body>
+</html>

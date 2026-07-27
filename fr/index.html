@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Audit sécurité Microsoft 365 pour PME sans informaticien</title>
+<meta name="description" content="Audit des accès et de l'identité Microsoft 365 / Entra ID pour les TPE et PME de 5 à 80 postes : rapport noté sur 15 contrôles, durcissement, dossiers de conformité. À distance, à prix fixe, sans jargon.">
+<link rel="canonical" href="https://aegiren.com/fr/">
+<link rel="alternate" hreflang="fr" href="https://aegiren.com/fr/">
+<link rel="alternate" hreflang="en" href="https://aegiren.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://aegiren.com/fr/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="icon" type="image/svg+xml" href="/assets/img/aegiren-favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/aegiren-favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/aegiren-favicon-180.png">
+<link rel="preload" href="/assets/fonts/SourceSans3-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aegiren">
+<meta property="og:title" content="Audit sécurité Microsoft 365 pour PME sans informaticien">
+<meta property="og:description" content="Audit des accès et de l'identité Microsoft 365 / Entra ID pour les TPE et PME de 5 à 80 postes : rapport noté sur 15 contrôles, durcissement, dossiers de conformité. À distance, à prix fixe, sans jargon.">
+<meta property="og:url" content="https://aegiren.com/fr/">
+<meta property="og:image" content="https://aegiren.com/assets/img/aegiren-og.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://aegiren.com/#organisation","name":"Aegiren","url":"https://aegiren.com/fr/","logo":"https://aegiren.com/assets/img/aegiren-monogramme.svg","image":"https://aegiren.com/assets/img/aegiren-og.png","email":"contact@aegiren.com","slogan":"Audité · Durci · Documenté","description":"Conseil et audit de sécurité des accès et de l'identité Microsoft 365 / Entra ID pour les TPE et PME de 5 à 80 postes. À distance, à prix fixe, livré par écrit.","areaServed":[{"@type":"Country","name":"France"},{"@type":"Place","name":"Europe"}],"availableLanguage":["fr","en"],"knowsAbout":["Microsoft 365","Microsoft Entra ID","Conditional access","Multi-factor authentication","Identity and access management","CIS Microsoft 365 Foundations Benchmark","ANSSI","NIS2","Microsoft 365 backup"],"contactPoint":{"@type":"ContactPoint","contactType":"commercial","email":"contact@aegiren.com","availableLanguage":["fr","en"],"url":"https://aegiren.com/fr/contact/"}}</script>
+</head>
+<body>
+<header class="entete">
+<div class="conteneur entete__barre">
+<a class="entete__logo" href="/fr/" aria-label="Aegiren — accueil"><img src="/assets/img/aegiren-lockup-h-light.svg" alt="Aegiren" width="150" height="34" fetchpriority="high"></a>
+<nav class="nav" aria-label="Navigation principale">
+<a href="/fr/">Accueil</a>
+<a href="/fr/methode/">Méthode</a>
+<a href="/fr/offres/">Offres</a>
+<a href="/fr/ressources/" data-secondaire>Ressources</a>
+<a href="/fr/#apropos" data-secondaire>À propos</a>
+</nav>
+<div class="entete__actions">
+<span class="langue"><strong>FR</strong><span>&nbsp;—&nbsp;</span><a href="/en/" data-alt-lang hreflang="en">EN</a></span>
+<a class="btn btn--primaire btn--petit" href="/fr/contact/">Demander un échange</a>
+</div>
+</div>
+</header>
+<main>
+<section class="conteneur heros">
+<div class="heros__col">
+<span class="kicker">Sécurité des accès et de l'identité — Microsoft&nbsp;365 · Entra&nbsp;ID</span>
+<h1>Votre Microsoft&nbsp;365, audité, durci, documenté.</h1>
+<p class="heros__sous">Pour les TPE et PME de 5 à 80 postes, sans informaticien dédié. Tout à distance, tout par écrit, sans jargon — et sans rien modifier chez vous.</p>
+<div class="heros__cta">
+<a class="btn btn--primaire" href="#checklist">Télécharger la checklist</a>
+<a class="btn btn--contour" href="/fr/contact/">Demander un échange</a>
+</div>
+<div class="ternaire">
+<div><span class="num">01&nbsp;AUDITÉ</span><p>L'état réel de vos accès, noté.</p></div>
+<div><span class="num">02&nbsp;DURCI</span><p>Les correctifs mis en œuvre.</p></div>
+<div><span class="num">03&nbsp;DOCUMENTÉ</span><p>Les preuves écrites qu'on vous demande.</p></div>
+</div>
+</div>
+<aside class="repere" aria-label="Repères">
+<div><span class="valeur valeur--grand">15</span><br><span class="legende">CONTRÔLES NOTÉS</span></div>
+<div><span class="valeur">CIS&nbsp;·&nbsp;ANSSI</span><br><span class="legende">RÉFÉRENTIELS PUBLICS</span></div>
+<div><span class="valeur">LECTURE SEULE</span><br><span class="legende">AUCUNE MODIFICATION</span></div>
+<div><span class="valeur valeur--grand">48&nbsp;H</span><br><span class="legende">DÉLAI DE RÉPONSE</span></div>
+</aside>
+</section>
+
+<div class="bandeau">
+<div class="conteneur bandeau__ligne">
+<span>100&nbsp;% À DISTANCE</span><span>PÉRIMÈTRE ÉCRIT</span><span>RAPPORT CLAIR</span><span>SANS ENGAGEMENT</span>
+</div>
+</div>
+
+<section class="conteneur section">
+<div class="titre-section">
+<h2>Trois offres, dans l'ordre.</h2>
+<a class="lien-fort" href="/fr/offres/">Voir les cinq offres en détail&nbsp;→</a>
+</div>
+<div class="cartes">
+<div class="carte">
+<span class="num">01&nbsp;AUDITÉ</span>
+<h3>Diagnostic Accès &amp; Identité</h3>
+<p class="carte__texte">Vous ne savez pas qui peut accéder à quoi, ni ce qui traîne depuis des années. Quinze points de contrôle, un rapport noté, un plan d'action priorisé.</p>
+<div class="carte__meta"><span>LIVRABLE — RAPPORT NOTÉ + RESTITUTION 45&nbsp;MIN</span><span>DURÉE — 7 JOURS OUVRÉS</span></div>
+<a class="lien-fort" href="/fr/contact/">Demander un échange&nbsp;→</a>
+</div>
+<div class="carte">
+<span class="num">02&nbsp;DURCI</span>
+<h3>Durcissement express</h3>
+<p class="carte__texte">Le diagnostic est posé, les correctifs attendent. MFA généralisé, accès conditionnel, comptes admin séparés, offboarding — mis en œuvre et prouvés.</p>
+<div class="carte__meta"><span>LIVRABLE — RAPPORT AVANT&nbsp;/&nbsp;APRÈS</span><span>DURÉE — 2 À 3 SEMAINES</span></div>
+<a class="lien-fort" href="/fr/contact/">Demander un échange&nbsp;→</a>
+</div>
+<div class="carte">
+<span class="num">03&nbsp;DOCUMENTÉ</span>
+<h3>Dossier de confiance</h3>
+<p class="carte__texte">Un client, un assureur ou un donneur d'ordre exige des preuves écrites. Questionnaire de sécurité complété, pack de politiques, dossier pré-NIS2.</p>
+<div class="carte__meta"><span>LIVRABLE — DOSSIER PRÊT À TRANSMETTRE</span><span>DURÉE — 1 À 2 SEMAINES</span></div>
+<a class="lien-fort" href="/fr/contact/">Demander un échange&nbsp;→</a>
+</div>
+</div>
+</section>
+
+<section class="conteneur section deux-colonnes">
+<div class="deux-colonnes__intro">
+<span class="kicker">La méthode</span>
+<h2>Une semaine, trois jalons, rien de modifié chez vous.</h2>
+<p>Accès en lecture seule, analyse à distance, restitution enregistrable. Le périmètre est écrit avant de commencer.</p>
+<a class="lien-fort" href="/fr/methode/">Lire la méthode complète&nbsp;→</a>
+</div>
+<div class="jalons">
+<div>
+<span class="jour">J&nbsp;+&nbsp;0</span>
+<div><h3>Cadrage et périmètre écrit</h3><p>Un échange de trente minutes. Vous créez un compte en lecture seule — je vous guide, c'est l'affaire de dix minutes.</p></div>
+</div>
+<div>
+<span class="jour">J&nbsp;+&nbsp;2</span>
+<div><h3>Analyse à distance</h3><p>Quinze points de contrôle passés en revue. Aucune modification, aucun test d'intrusion, aucune interruption pour vos équipes.</p></div>
+</div>
+<div>
+<span class="jour">J&nbsp;+&nbsp;7</span>
+<div><h3>Rapport et restitution</h3><p>Un rapport noté, un plan d'action priorisé, quarante-cinq minutes de restitution — enregistrables si vous le souhaitez.</p></div>
+</div>
+</div>
+</section>
+
+<section id="checklist" class="section-sombre">
+<div class="conteneur section-sombre__grille">
+<div class="section-sombre__col">
+<span class="kicker kicker--sombre">Vérifiez-le vous-même — sans e-mail, sans formulaire</span>
+<h2>La checklist des 15 contrôles Microsoft&nbsp;365.</h2>
+<p class="texte">Quinze questions qu'un dirigeant peut vérifier lui-même, chacune avec le chemin exact dans le portail Microsoft. Répondez en ligne pour obtenir votre score et vos priorités en cinq minutes, ou emportez le PDF.</p>
+<div class="heros__cta">
+<a class="btn btn--sombre-primaire" href="/fr/test/">Faire le test — 5 min</a>
+<a class="btn btn--sombre-contour" href="/fr/checklist/">Lire la checklist</a>
+<a class="btn btn--sombre-contour" href="/assets/docs/H-Checklist-15-controles-M365-FR.pdf" download>Télécharger le PDF</a>
+</div>
+</div>
+<div class="extrait" aria-label="Extrait de la checklist">
+<span class="etiquette">EXTRAIT</span>
+<span class="item">A-01&nbsp;&nbsp;MFA pour tous les comptes&nbsp;?</span>
+<span class="item">A-02&nbsp;&nbsp;Admins séparés du quotidien&nbsp;?</span>
+<span class="item">A-04&nbsp;&nbsp;Comptes dormants purgés&nbsp;?</span>
+<span class="suite">…&nbsp;et 12 autres contrôles</span>
+</div>
+</div>
+</section>
+
+<section id="apropos" class="conteneur section section--fin deux-colonnes">
+<div class="deux-colonnes__intro">
+<span class="kicker">La marque</span>
+<h2>Une marque, pas un visage.</h2>
+</div>
+<div class="apropos-texte">
+<p>Aegiren travaille comme la sécurité travaille&nbsp;: discrètement. Pas de portrait, pas de biographie — des livrables écrits, un périmètre net, un cadre éthique publié. Les contenus sont signés Mithra&nbsp;; le reste se juge sur pièces.</p>
+<p>Indépendant par construction&nbsp;: Aegiren n'exploite pas le système qu'il audite, et n'a rien à vous revendre derrière.</p>
+</div>
+</section>
+</main>
+<footer class="pied">
+<div class="conteneur pied__grille">
+<div class="pied__marque">
+<img src="/assets/img/aegiren-lockup-etendu-dark.svg" alt="Aegiren — Audité · Durci · Documenté" width="210" height="76">
+<p>Sécurité des accès et de l'identité pour les petites structures — Microsoft&nbsp;365&nbsp;·&nbsp;Entra&nbsp;ID.</p>
+</div>
+<div class="pied__col"><span class="etiquette">OFFRES</span>
+<a href="/fr/offres/">01 — Diagnostic Accès &amp; Identité</a>
+<a href="/fr/offres/">02 — Durcissement express</a>
+<a href="/fr/offres/">03 — Dossier de confiance</a>
+<a href="/fr/offres/#complementaires">04 — Sensibilisation &amp; phishing</a>
+<a href="/fr/offres/#complementaires">05 — Sauvegarde &amp; résilience</a>
+</div>
+<div class="pied__col"><span class="etiquette">RESSOURCES</span>
+<a href="/fr/checklist/">Checklist 15 contrôles</a>
+<a href="/fr/test/">Test en ligne — 5 minutes</a>
+<a href="/fr/methode/">La méthode</a>
+<a href="/fr/#apropos">À propos</a>
+</div>
+<div class="pied__col"><span class="etiquette">CONTACT</span>
+<a href="/fr/contact/">Demander un échange</a>
+<a class="mono" href="mailto:contact@aegiren.com">contact@aegiren.com</a>
+<span class="mention">RÉPONSE SOUS 48&nbsp;H</span>
+</div>
+</div>
+<div class="pied__base">
+<div class="conteneur pied__base-ligne">
+<span>©&nbsp;2026 AEGIREN&nbsp;&nbsp;·&nbsp;&nbsp;<a href="/fr/confidentialite/">CONFIDENTIALITÉ</a></span>
+<span><span class="actif">FR</span>&nbsp;—&nbsp;<a href="/en/" data-alt-lang>EN</a></span>
+</div>
+</div>
+</footer>
+</body>
+</html>
