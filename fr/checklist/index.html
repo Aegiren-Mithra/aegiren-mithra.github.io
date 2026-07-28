@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://aegiren.com/#organisation","name":"Aegiren","url":"https://aegiren.com/fr/","logo":"https://aegiren.com/assets/img/aegiren-monogramme.svg","image":"https://aegiren.com/assets/img/aegiren-og.png","email":"contact@aegiren.com","slogan":"Audité · Durci · Documenté","description":"Conseil et audit de sécurité des accès et de l'identité Microsoft 365 / Entra ID pour les TPE et PME de 5 à 80 postes. À distance, à prix fixe, livré par écrit.","areaServed":[{"@type":"Country","name":"France"},{"@type":"Place","name":"Europe"}],"availableLanguage":["fr","en"],"knowsAbout":["Microsoft 365","Microsoft Entra ID","Conditional access","Multi-factor authentication","Identity and access management","CIS Microsoft 365 Foundations Benchmark","ANSSI","NIS2","Microsoft 365 backup"],"contactPoint":{"@type":"ContactPoint","contactType":"commercial","email":"contact@aegiren.com","availableLanguage":["fr","en"],"url":"https://aegiren.com/fr/contact/"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://aegiren.com/fr/"},{"@type":"ListItem","position":2,"name":"Ressources","item":"https://aegiren.com/fr/ressources/"},{"@type":"ListItem","position":3,"name":"Checklist","item":"https://aegiren.com/fr/checklist/"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sécuriser Microsoft 365 dans une PME : 15 contrôles à vérifier vous-même","description":"Quinze contrôles qu'un dirigeant de PME peut vérifier lui-même dans Microsoft 365 : MFA, comptes dormants, partages externes, sauvegarde. Téléchargement libre, sans e-mail.","url":"https://aegiren.com/fr/checklist/","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegiren.com/fr/checklist/"},"inLanguage":"fr","datePublished":"2026-07-26","dateModified":"2026-07-27","author":{"@type":"Person","name":"Mithra","url":"https://aegiren.com/fr/#apropos"},"publisher":{"@id":"https://aegiren.com/#organisation"},"image":"https://aegiren.com/assets/img/aegiren-og.png","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by-nd/4.0/","creditText":"Aegiren — aegiren.com"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sécuriser Microsoft 365 dans une PME : 15 contrôles à vérifier vous-même","description":"Quinze contrôles qu'un dirigeant de PME peut vérifier lui-même dans Microsoft 365 : MFA, comptes dormants, partages externes, sauvegarde. Téléchargement libre, sans e-mail.","url":"https://aegiren.com/fr/checklist/","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegiren.com/fr/checklist/"},"inLanguage":"fr","datePublished":"2026-07-26","dateModified":"2026-07-28","author":{"@type":"Person","name":"Mithra","url":"https://aegiren.com/fr/#apropos"},"publisher":{"@id":"https://aegiren.com/#organisation"},"image":"https://aegiren.com/assets/img/aegiren-og.png","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by-nd/4.0/","creditText":"Aegiren — aegiren.com"}</script>
 </head>
 <body>
 <header class="entete">
@@ -62,7 +62,7 @@
 <div class="article__corps">
 <p><strong>Une checklist gratuite, sans inscription et sans e-mail à laisser.</strong>
 Aegiren — sécurité des accès et de l'identité · Microsoft 365 · Entra ID
-<strong>Version 1.1 — 27 juillet 2026</strong> · Licence CC BY-ND 4.0 · Réutilisation et citation en fin de document</p>
+<strong>Version 1.2 — 28 juillet 2026</strong> · Licence CC BY-ND 4.0 · Réutilisation et citation en fin de document</p>
 <hr />
 <h2 id="a-qui-elle-sadresse">À qui elle s'adresse</h2>
 <p>Vous dirigez une structure de 5 à 80 personnes sous Microsoft 365. Vous n'avez pas d'informaticien à demeure, ou une seule personne qui fait déjà tout. Vous vous demandez si vos comptes sont correctement protégés, sans savoir par quel bout regarder.</p>
@@ -131,12 +131,13 @@ Aegiren — sécurité des accès et de l'identité · Microsoft 365 · Entra ID
 <p>🟢 Aucune connexion héritée sur trente jours, et un blocage explicite en place.
 🔴 Des connexions héritées apparaissent, ou vous n'avez jamais vérifié.</p>
 <hr />
-<h2 id="7-les-transferts-de-messagerie-et-lanti-hameconnage">7. Les transferts de messagerie et l'anti-hameçonnage</h2>
-<p><strong>La question :</strong> un utilisateur peut-il faire suivre automatiquement tous ses e-mails vers une adresse extérieure ? Et vos protections anti-hameçonnage sont-elles réglées ?</p>
-<p><strong>Où vérifier :</strong> portail Defender → <em>Stratégies et règles</em> → <em>Stratégies contre les menaces</em> → <em>Anti-courrier indésirable sortant</em> pour le transfert automatique, et <em>Anti-hameçonnage</em> pour la protection. Vérifiez aussi les règles de boîte aux lettres dans le centre d'administration Exchange.</p>
+<h2 id="7-la-messagerie-transferts-hameconnage-et-usurpation-de-votre-domaine">7. La messagerie : transferts, hameçonnage et usurpation de votre domaine</h2>
+<p><strong>La question :</strong> un utilisateur peut-il faire suivre automatiquement tous ses e-mails vers une adresse extérieure ? Vos protections anti-hameçonnage sont-elles réglées ? Et un inconnu peut-il envoyer un message qui semble venir de vous ?</p>
+<p><strong>Où vérifier :</strong> portail Defender → <em>Stratégies et règles</em> → <em>Stratégies contre les menaces</em> → <em>Anti-courrier indésirable sortant</em> pour le transfert automatique, et <em>Anti-hameçonnage</em> pour la protection. Les règles de boîte aux lettres se consultent dans le centre d'administration Exchange. L'authentification de votre domaine, elle, ne se lit pas dans Microsoft 365 mais dans vos enregistrements DNS : il vous faut un enregistrement TXT <code>v=spf1</code>, une clé <code>…_domainkey</code>, et un enregistrement <code>_dmarc</code>. N'importe quel vérificateur public SPF/DKIM/DMARC les affiche en quelques secondes à partir de votre nom de domaine.</p>
 <p><strong>Pourquoi ça compte :</strong> la règle de transfert discrète est <strong>la signature classique d'une boîte compromise</strong>. L'attaquant qui prend la main sur une messagerie crée une règle qui lui expédie une copie de tout, puis se retire : il continue de tout lire sans jamais se reconnecter. C'est le mécanisme central de la fraude au virement.</p>
-<p>🟢 Le transfert automatique vers l'extérieur est bloqué, et la protection anti-hameçonnage est renforcée pour les dirigeants et la comptabilité.
-🔴 Le transfert externe est autorisé sans contrôle, ou vous découvrez des règles de transfert que personne n'a créées sciemment.</p>
+<p>L'usurpation de domaine est l'attaque symétrique, et elle ne demande <strong>aucune compromission</strong> : sans enregistrement <code>_dmarc</code>, n'importe qui peut envoyer un e-mail qui affiche votre nom de domaine dans le champ expéditeur. C'est ce qui rend crédible le message du « dirigeant » demandant un virement urgent, ou celui du « fournisseur » annonçant un changement de coordonnées bancaires — et le destinataire n'a aucun moyen de le distinguer d'un vrai. Deux pièges fréquents : SPF seul ne protège pas l'adresse que le destinataire voit à l'écran, et un DMARC laissé en <code>p=none</code> est une position d'observation, pas une protection. La correction est gratuite, elle se fait entièrement en DNS, et elle ne dépend d'aucune licence.</p>
+<p>🟢 Le transfert automatique vers l'extérieur est bloqué, la protection anti-hameçonnage est renforcée pour les dirigeants et la comptabilité, et vos trois enregistrements SPF, DKIM et DMARC existent — DMARC en quarantaine ou en rejet.
+🔴 Le transfert externe est autorisé sans contrôle, vous découvrez des règles de transfert que personne n'a créées sciemment, ou votre domaine n'a pas d'enregistrement <code>_dmarc</code>.</p>
 <hr />
 <h2 id="8-le-partage-externe-des-fichiers">8. Le partage externe des fichiers</h2>
 <p><strong>La question :</strong> qui peut recevoir un lien vers vos documents, et ces liens expirent-ils ?</p>
@@ -196,7 +197,7 @@ Aegiren — sécurité des accès et de l'identité · Microsoft 365 · Entra ID
 <hr />
 <h2 id="et-maintenant">Et maintenant ?</h2>
 <p>Comptez vos couleurs.</p>
-<p><strong>Cinq rouges ou plus.</strong> C'est fréquent et ce n'est pas une raison de paniquer : cela signifie surtout que vos réglages sont restés ceux d'origine. Commencez par les points 4, 3, 6 et 12 — la double authentification, le nombre d'administrateurs, les anciens protocoles et la sauvegarde. Ces quatre-là ferment l'essentiel du risque réel, et les trois premiers sont gratuits.</p>
+<p><strong>Cinq rouges ou plus.</strong> C'est fréquent et ce n'est pas une raison de paniquer : cela signifie surtout que vos réglages sont restés ceux d'origine. Commencez par les points 4, 3, 6 et 12 — la double authentification, le nombre d'administrateurs, les anciens protocoles et la sauvegarde. Ces quatre-là ferment l'essentiel du risque réel, et les trois premiers sont gratuits. Ajoutez-y la partie DMARC du point 7 si votre domaine n'en a pas : c'est gratuit, ça se règle en DNS, et ça retire à un inconnu la possibilité d'écrire à vos clients en votre nom.</p>
 <p><strong>Entre un et quatre rouges.</strong> Votre socle tient. Traitez-les dans l'ordre où ils apparaissent ci-dessus : la liste est classée par impact décroissant.</p>
 <p><strong>Aucun rouge, quelques oranges.</strong> Vous êtes au-dessus de la moyenne de votre catégorie. Le sujet devient alors la régularité — une revue trimestrielle des comptes, des invités et des partages — plutôt que la configuration.</p>
 <p><strong>Une remarque honnête pour finir.</strong> Cette liste vous dit <em>où</em> vous en êtes. Elle ne vous dit pas ce qui, dans votre situation particulière, mérite d'être traité en premier, ni ce que coûte réellement chaque correction. C'est précisément ce travail — regarder, comparer à un référentiel, noter, prioriser — que je fais pour des structures de votre taille, en quelques heures étalées sur deux semaines, à distance, et restitué par écrit.</p>
@@ -204,21 +205,22 @@ Aegiren — sécurité des accès et de l'identité · Microsoft 365 · Entra ID
 <hr />
 <p><strong>Référentiels.</strong> Cette checklist s'appuie sur le <em>CIS Microsoft 365 Foundations Benchmark</em> et sur le <em>Guide d'hygiène informatique</em> de l'ANSSI, adaptés à la réalité d'une structure de 5 à 80 postes.</p>
 <h2 id="version-et-reutilisation">Version et réutilisation</h2>
-<p><strong>Version 1.1 — révisée le 27 juillet 2026.</strong> La version en vigueur est toujours celle publiée sur <strong>aegiren.com/fr/checklist</strong>. Les chemins d'accès aux portails Microsoft sont vérifiés à cette date ; Microsoft renomme régulièrement ses écrans, et une fonction déplacée se retrouve en cherchant son nom dans la barre du portail concerné.</p>
+<p><strong>Version 1.2 — révisée le 28 juillet 2026.</strong> La version en vigueur est toujours celle publiée sur <strong>aegiren.com/fr/checklist</strong>. Les chemins d'accès aux portails Microsoft sont vérifiés à cette date ; Microsoft renomme régulièrement ses écrans, et une fonction déplacée se retrouve en cherchant son nom dans la barre du portail concerné.</p>
+<p><em>Nouveautés de la v1.2 : le point 7 couvre désormais l'authentification de votre domaine de messagerie — SPF, DKIM et DMARC — en plus des transferts automatiques et de l'anti-hameçonnage.</em></p>
 <p><strong>Licence : Creative Commons Attribution — Pas de Modification 4.0 International (CC BY-ND 4.0).</strong> Vous pouvez copier, redistribuer et diffuser ce document sur tout support et par tout moyen, <strong>y compris à des fins commerciales</strong> : un expert-comptable, un courtier en assurance ou un infogéreur peut le remettre à ses propres clients, l'héberger sur son site ou le joindre à un dossier. Deux conditions seulement : <strong>en citer la source avec un lien</strong>, et <strong>ne pas le modifier</strong>. Texte complet : <code>creativecommons.org/licenses/by-nd/4.0/deed.fr</code>.</p>
 <h3 id="comment-citer-cette-ressource">Comment citer cette ressource</h3>
 <p>En note ou en bibliographie :</p>
 <blockquote>
-<p>Aegiren, <em>Sécuriser Microsoft 365 dans une PME : 15 contrôles à vérifier vous-même</em>, version 1.1, 27 juillet 2026. https://aegiren.com/fr/checklist/</p>
+<p>Aegiren, <em>Sécuriser Microsoft 365 dans une PME : 15 contrôles à vérifier vous-même</em>, version 1.2, 28 juillet 2026. https://aegiren.com/fr/checklist/</p>
 </blockquote>
 <p>Sur une page web :</p>
 <blockquote>
-<p><code>&lt;a href="https://aegiren.com/fr/checklist/"&gt;Sécuriser Microsoft 365 dans une PME : 15 contrôles&lt;/a&gt; — Aegiren, v1.1 (2026)</code></p>
+<p><code>&lt;a href="https://aegiren.com/fr/checklist/"&gt;Sécuriser Microsoft 365 dans une PME : 15 contrôles&lt;/a&gt; — Aegiren, v1.2 (2026)</code></p>
 </blockquote>
 <p><strong>Vous l'avez publiée quelque part ?</strong> Écrivez à <strong>contact@aegiren.com</strong>. Les reprises sont recensées, et prévenues personnellement à chaque nouvelle version — pour qu'aucun de vos clients ne se retrouve avec un chemin de portail périmé entre les mains.</p>
 <hr />
 <p><em>Aegiren — Votre Microsoft 365, audité, durci, documenté.</em>
-<em>Rédigé par Mithra · v1.1 · 27 juillet 2026 · aegiren.com</em></p>
+<em>Rédigé par Mithra · v1.2 · 28 juillet 2026 · aegiren.com</em></p>
 </div>
 </div>
 </main>

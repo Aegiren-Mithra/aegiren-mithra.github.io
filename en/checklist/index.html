@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://aegiren.com/#organisation","name":"Aegiren","url":"https://aegiren.com/en/","logo":"https://aegiren.com/assets/img/aegiren-monogramme.svg","image":"https://aegiren.com/assets/img/aegiren-og.png","email":"contact@aegiren.com","slogan":"Audited · Hardened · Documented","description":"Access and identity security consulting and audits for Microsoft 365 / Entra ID, for teams of 5 to 80. Remote, fixed price, delivered in writing.","areaServed":[{"@type":"Country","name":"France"},{"@type":"Place","name":"Europe"}],"availableLanguage":["fr","en"],"knowsAbout":["Microsoft 365","Microsoft Entra ID","Conditional access","Multi-factor authentication","Identity and access management","CIS Microsoft 365 Foundations Benchmark","ANSSI","NIS2","Microsoft 365 backup"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"contact@aegiren.com","availableLanguage":["fr","en"],"url":"https://aegiren.com/en/contact/"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aegiren.com/en/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://aegiren.com/en/resources/"},{"@type":"ListItem","position":3,"name":"Checklist","item":"https://aegiren.com/en/checklist/"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Securing Microsoft 365 in a small company: 15 checks you can run yourself","description":"Fifteen checks a business owner can verify in the Microsoft 365 portal: MFA, dormant accounts, external sharing, backup. Free download, no email wall.","url":"https://aegiren.com/en/checklist/","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegiren.com/en/checklist/"},"inLanguage":"en","datePublished":"2026-07-26","dateModified":"2026-07-27","author":{"@type":"Person","name":"Mithra","url":"https://aegiren.com/en/#about"},"publisher":{"@id":"https://aegiren.com/#organisation"},"image":"https://aegiren.com/assets/img/aegiren-og.png","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by-nd/4.0/","creditText":"Aegiren — aegiren.com"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Securing Microsoft 365 in a small company: 15 checks you can run yourself","description":"Fifteen checks a business owner can verify in the Microsoft 365 portal: MFA, dormant accounts, external sharing, backup. Free download, no email wall.","url":"https://aegiren.com/en/checklist/","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegiren.com/en/checklist/"},"inLanguage":"en","datePublished":"2026-07-26","dateModified":"2026-07-28","author":{"@type":"Person","name":"Mithra","url":"https://aegiren.com/en/#about"},"publisher":{"@id":"https://aegiren.com/#organisation"},"image":"https://aegiren.com/assets/img/aegiren-og.png","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by-nd/4.0/","creditText":"Aegiren — aegiren.com"}</script>
 </head>
 <body>
 <header class="entete">
@@ -62,7 +62,7 @@
 <div class="article__corps">
 <p><strong>A free checklist. No sign-up, no email required.</strong>
 Aegiren — access and identity security · Microsoft 365 · Entra ID
-<strong>Version 1.1 — 27 July 2026</strong> · CC BY-ND 4.0 licence · Reuse and citation at the end of this document</p>
+<strong>Version 1.2 — 28 July 2026</strong> · CC BY-ND 4.0 licence · Reuse and citation at the end of this document</p>
 <hr />
 <h2 id="who-this-is-for">Who this is for</h2>
 <p>You run a company of 5 to 80 people on Microsoft 365. You have no in-house IT, or one person already doing everything. You suspect your accounts may not be properly protected, but you don't know where to start looking.</p>
@@ -131,12 +131,13 @@ Aegiren — access and identity security · Microsoft 365 · Entra ID
 <p>🟢 No legacy sign-ins over thirty days, with an explicit block in place.
 🔴 Legacy sign-ins appear in the logs, or you've never checked.</p>
 <hr />
-<h2 id="7-mail-forwarding-and-anti-phishing">7. Mail forwarding and anti-phishing</h2>
-<p><strong>The question:</strong> can a user automatically forward all their email to an outside address? And is your anti-phishing protection configured?</p>
-<p><strong>Where to check:</strong> Defender portal → <em>Policies &amp; rules</em> → <em>Threat policies</em> → <em>Anti-spam outbound policy</em> for automatic forwarding, and <em>Anti-phishing</em> for protection. Also review mailbox rules in the Exchange admin center.</p>
+<h2 id="7-email-forwarding-phishing-and-domain-spoofing">7. Email: forwarding, phishing and domain spoofing</h2>
+<p><strong>The question:</strong> can a user automatically forward all their email to an outside address? Is your anti-phishing protection configured? And can a stranger send a message that appears to come from you?</p>
+<p><strong>Where to check:</strong> Defender portal → <em>Policies &amp; rules</em> → <em>Threat policies</em> → <em>Anti-spam outbound policy</em> for automatic forwarding, and <em>Anti-phishing</em> for protection. Mailbox rules are in the Exchange admin center. Domain authentication, however, is not read inside Microsoft 365 but in your DNS records: you need a <code>v=spf1</code> TXT record, a <code>…_domainkey</code> key, and a <code>_dmarc</code> record. Any public SPF/DKIM/DMARC checker will show all three from your domain name in seconds.</p>
 <p><strong>Why it matters:</strong> a quiet forwarding rule is <strong>the classic signature of a compromised mailbox</strong>. An attacker who gains access creates a rule that copies everything to them, then steps back: they keep reading without ever signing in again. This is the core mechanism behind invoice and payment fraud.</p>
-<p>🟢 Automatic external forwarding is blocked, and anti-phishing protection is strengthened for executives and finance.
-🔴 External forwarding is unrestricted, or you find forwarding rules nobody knowingly created.</p>
+<p>Domain spoofing is the mirror attack, and it requires <strong>no compromise at all</strong>: without a <code>_dmarc</code> record, anyone can send an email that displays your domain in the sender field. That is what makes the "CEO" asking for an urgent transfer believable, or the "supplier" announcing new bank details — and the recipient has no way to tell it from the real thing. Two common traps: SPF alone does not protect the address the recipient actually sees, and a DMARC record left at <code>p=none</code> is an observation stance, not a protection. Fixing it is free, happens entirely in DNS, and depends on no licence.</p>
+<p>🟢 Automatic external forwarding is blocked, anti-phishing protection is strengthened for executives and finance, and your SPF, DKIM and DMARC records all exist — with DMARC set to quarantine or reject.
+🔴 External forwarding is unrestricted, you find forwarding rules nobody knowingly created, or your domain has no <code>_dmarc</code> record.</p>
 <hr />
 <h2 id="8-external-file-sharing">8. External file sharing</h2>
 <p><strong>The question:</strong> who can receive a link to your documents, and do those links expire?</p>
@@ -196,7 +197,7 @@ Aegiren — access and identity security · Microsoft 365 · Entra ID
 <hr />
 <h2 id="so-what-now">So what now?</h2>
 <p>Count your colours.</p>
-<p><strong>Five reds or more.</strong> This is common and no cause for panic: it mostly means your settings are still the ones you started with. Begin with items 4, 3, 6 and 12 — MFA, the number of administrators, legacy protocols, and backup. Those four close most of the real risk, and the first three are free.</p>
+<p><strong>Five reds or more.</strong> This is common and no cause for panic: it mostly means your settings are still the ones you started with. Begin with items 4, 3, 6 and 12 — MFA, the number of administrators, legacy protocols, and backup. Those four close most of the real risk, and the first three are free. Add the DMARC part of item 7 if your domain has no record: it is free, it is fixed in DNS, and it takes away a stranger's ability to write to your customers in your name.</p>
 <p><strong>One to four reds.</strong> Your foundation holds. Work through them in the order they appear above: the list is ordered by decreasing impact.</p>
 <p><strong>No reds, a few ambers.</strong> You're above average for your size. The subject then becomes consistency — a quarterly review of accounts, guests and shares — rather than configuration.</p>
 <p><strong>One honest closing note.</strong> This list tells you <em>where</em> you stand. It doesn't tell you what, in your specific situation, deserves attention first, or what each fix actually costs. That work — looking, comparing against a benchmark, scoring, prioritising — is exactly what I do for companies your size: a few hours spread over two weeks, fully remote, delivered in writing.</p>
@@ -204,21 +205,22 @@ Aegiren — access and identity security · Microsoft 365 · Entra ID
 <hr />
 <p><strong>Benchmarks.</strong> This checklist draws on the <em>CIS Microsoft 365 Foundations Benchmark</em> and the French national cybersecurity agency's (ANSSI) IT hygiene guide, adapted to the reality of a 5-to-80-seat organisation.</p>
 <h2 id="version-and-reuse">Version and reuse</h2>
-<p><strong>Version 1.1 — revised 27 July 2026.</strong> The current version is always the one published at <strong>aegiren.com/en/checklist</strong>. The Microsoft portal paths were verified on that date; Microsoft renames its screens regularly, and a relocated feature can be found by searching its name in the relevant portal's search bar.</p>
+<p><strong>Version 1.2 — revised 28 July 2026.</strong> The current version is always the one published at <strong>aegiren.com/en/checklist</strong>. The Microsoft portal paths were verified on that date; Microsoft renames its screens regularly, and a relocated feature can be found by searching its name in the relevant portal's search bar.</p>
+<p><em>New in v1.2: item 7 now covers the authentication of your email domain — SPF, DKIM and DMARC — alongside automatic forwarding and anti-phishing.</em></p>
 <p><strong>Licence: Creative Commons Attribution — NoDerivatives 4.0 International (CC BY-ND 4.0).</strong> You may copy, redistribute and share this document in any medium or format, <strong>including commercially</strong>: an accountant, an insurance broker or a managed service provider may hand it to their own clients, host it on their site, or attach it to a report. Two conditions only: <strong>credit the source with a link</strong>, and <strong>do not modify it</strong>. Full text: <code>creativecommons.org/licenses/by-nd/4.0/</code>.</p>
 <h3 id="how-to-cite-this-resource">How to cite this resource</h3>
 <p>In a footnote or bibliography:</p>
 <blockquote>
-<p>Aegiren, <em>Securing Microsoft 365 in a small company: 15 checks you can run yourself</em>, version 1.1, 27 July 2026. https://aegiren.com/en/checklist/</p>
+<p>Aegiren, <em>Securing Microsoft 365 in a small company: 15 checks you can run yourself</em>, version 1.2, 28 July 2026. https://aegiren.com/en/checklist/</p>
 </blockquote>
 <p>On a web page:</p>
 <blockquote>
-<p><code>&lt;a href="https://aegiren.com/en/checklist/"&gt;Securing Microsoft 365 in a small company: 15 checks&lt;/a&gt; — Aegiren, v1.1 (2026)</code></p>
+<p><code>&lt;a href="https://aegiren.com/en/checklist/"&gt;Securing Microsoft 365 in a small company: 15 checks&lt;/a&gt; — Aegiren, v1.2 (2026)</code></p>
 </blockquote>
 <p><strong>Published it somewhere?</strong> Write to <strong>contact@aegiren.com</strong>. Reuses are tracked, and notified personally on every new version — so none of your clients is left holding an outdated portal path.</p>
 <hr />
 <p><em>Aegiren — Your Microsoft 365, audited, hardened, documented.</em>
-<em>Written by Mithra · v1.1 · 27 July 2026 · aegiren.com</em></p>
+<em>Written by Mithra · v1.2 · 28 July 2026 · aegiren.com</em></p>
 </div>
 </div>
 </main>
